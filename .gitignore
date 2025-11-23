@@ -1,0 +1,16 @@
+# Ignore data folders
+data/raw/
+data/processed/
+
+# Ignore models
+models/
+
+# Ignore results
+results/
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
