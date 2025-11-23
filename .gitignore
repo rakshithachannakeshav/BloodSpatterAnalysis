@@ -1,16 +1,28 @@
-# Ignore data folders
+# Ignore raw datasets
 data/raw/
 data/processed/
 
-# Ignore models
-models/
+# Ignore only large model weights
+models/**/*.pth
+models/**/*.h5
+models/**/*.ckpt
+models/**/*.pt
 
-# Ignore results
-results/
+# But DO NOT ignore model code
+!models/**/*.py
 
-# Ignore python cache
+# Ignore large results
+results/**/*.mp4
+results/**/*.avi
+results/**/*.zip
+
+# Allow visualization images (small)
+!results/**/*.png
+!results/**/*.jpg
+
+# Python cache
 __pycache__/
 *.pyc
 
-# Ignore Jupyter notebook checkpoints
+# Jupyter notebook checkpoints
 .ipynb_checkpoints/
